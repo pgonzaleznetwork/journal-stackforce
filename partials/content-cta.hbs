@@ -4,11 +4,37 @@
 
 <section class="gh-cta">
     {{#has visibility="paid"}}
-        <h4 class="gh-cta-title">This post is for paying subscribers only</h4>
+        <h4 class="gh-cta-title">This rest of this chapter is exclusive to PRO members</h4>
+        <p>This chapter contains unique insights in the form of code samples, tutorials or interviews with other 
+            Salesforce fullstack developers.
+        </p>
+        <br>
+        <p>
+            Become a PRO member to get access to the most up-to-date content on how to become a fullstack Salesforce 
+            developer and take your career to new heights.
+        </p>
+
+        <div class="gh-cta-actions">
+            {{#if @member}}
+                <button class="gh-btn gh-primary-btn" data-portal="account/plans">Get PRO</button>
+            {{else}}
+                <button class="gh-btn gh-primary-btn" data-portal="signup">Get PRO</button>
+            {{/if}}
+        </div>
+
+        
     {{/has}}
+
     {{#has visibility="members"}}
-        <h4 class="gh-cta-title">This post is for subscribers only</h4>
+        <h4 class="gh-cta-title">The rest of this chapter is exclusive to FREE members</h4>
+        <p>If you've enjoyed what you've read so far, please become a FREE member to get access
+            to more content like this and be notified as soon as new content becomes available.
+        </p>
+        <div class="gh-cta-actions">
+            <button class="gh-btn gh-primary-btn" data-portal="signup">Subscribe FREE</button>
+        </div>     
     {{/has}}
+
     {{#has visibility="filter"}}
         <h4 class="gh-cta-title">This post is for subscribers on the {{tiers}} only</h4>
     {{/has}}
@@ -17,8 +43,9 @@
         {{#if @member}}
             <button class="gh-btn gh-primary-btn" href="#/portal/account/plans" data-portal="account/plans">Upgrade now</button>
         {{else}}
-            <button class="gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe now</button>
+            <!--<button class="gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe FREE</button>-->
             <span class="gh-cta-link" href="#/portal/signin" data-portal="signin">Already have an account? Sign in.</span>
         {{/if}}
     </div>
 </section>
+
