@@ -680,3 +680,7 @@
       background-color: var(--ghost-accent-color);
     }
   }
+
+.gh-card-meta > .gh-card-link{
+    display: inline;
+}

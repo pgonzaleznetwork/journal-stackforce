@@ -3,13 +3,17 @@
 <main id="gh-main" class="gh-main gh-outer">
     <div class="gh-inner">
         {{^is "paged"}}
-            {{#get "posts" limit="1"}}
+            {{#get "posts" include="tags" limit="1"}}
                 {{#foreach posts}}
                     <article class="gh-latest gh-card {{post_class}}">
-                        <a class="gh-card-link" href="{{url}}">
+                        <a class="gh-card-link"  style="display:inline" href="{{url}}">
                             <header class="gh-card-header">
                                 <div class="gh-article-meta">
                                     <span class="gh-card-date">Latest — <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></span>
+                                    —  
+                                    in  <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+                                    
+                                    
                                 </div>
 
                                 <h2 class="gh-article-title gh-card-title">{{title}}</h2>
