@@ -42,6 +42,7 @@
 
                 <div class="gh-feed">
                     {{^is "paged"}}
+                        <!--At the time of this writing, this evaluates to true, so it's not paged-->
                         {{#foreach posts from="2"}}
                             {{> loop}}
                         {{/foreach}}
@@ -56,7 +57,7 @@
                     Additional issues will be published soon.
                 {{/match}}
 
-                <button class="gh-loadmore gh-btn">Load more issues</button>
+                <!--<button class="gh-loadmore gh-btn">Load more issues</button>-->
             </section>
 
             <aside class="gh-sidebar">
