@@ -9,11 +9,15 @@
         <footer class="gh-card-meta">
             <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
             —
+            {{#if primary_tag}}
+                in  <a class="gh-article-tag" href="{{primary_tag.url}}">{{primary_tag.name}}</a>
+               
+            {{/if}}
             <span class="gh-card-meta-wrapper">
                 <span class="gh-card-duration">{{reading_time}}</span>
 
                 {{^has visibility="public"}}
-                    {{> icons/star}}
+                    <span style="color: rgb(246, 37, 215);">{{> icons/star}}</span>
                 {{/has}}
             </span>
         </footer>

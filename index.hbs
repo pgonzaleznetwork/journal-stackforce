@@ -3,13 +3,17 @@
 <main id="gh-main" class="gh-main gh-outer">
     <div class="gh-inner">
         {{^is "paged"}}
-            {{#get "posts" limit="1"}}
+            {{#get "posts" include="tags" limit="1"}}
                 {{#foreach posts}}
                     <article class="gh-latest gh-card {{post_class}}">
-                        <a class="gh-card-link" href="{{url}}">
+                        <a class="gh-card-link"  style="display:inline" href="{{url}}">
                             <header class="gh-card-header">
                                 <div class="gh-article-meta">
                                     <span class="gh-card-date">Latest — <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time></span>
+                                    —  
+                                    in <span class="gh-article-tag">{{primary_tag.name}}</span>
+                                    
+                                    
                                 </div>
 
                                 <h2 class="gh-article-title gh-card-title">{{title}}</h2>
@@ -38,6 +42,7 @@
 
                 <div class="gh-feed">
                     {{^is "paged"}}
+                        <!--At the time of this writing, this evaluates to true, so it's not paged-->
                         {{#foreach posts from="2"}}
                             {{> loop}}
                         {{/foreach}}
@@ -52,7 +57,7 @@
                     Additional issues will be published soon.
                 {{/match}}
 
-                <button class="gh-loadmore gh-btn">Load more issues</button>
+                <!--<button class="gh-loadmore gh-btn">Load more issues</button>-->
             </section>
 
             <aside class="gh-sidebar">
@@ -76,17 +81,17 @@
                     {{^if @member.paid}}
                         <div class="gh-signup">
                             {{^if @member}}
-                                <p class="gh-signup-description">Sign up now to get access to the library of members-only issues.</p>
+                                <p class="gh-signup-description">Subscribe now to become a fullstack Salesforce developer</p>
 
                                 <a class="gh-subscribe-input" href="#/portal/signup" data-portal="signup">
                                     <div class="gh-subscribe-input-text">
                                         {{> icons/email}}
-                                        jamie@example.com
+                                        fullstackdev@pro.com
                                     </div>
                                     <div class="gh-subscribe-input-btn">Subscribe</div>
                                 </a>
                             {{else}}
-                                <p class="gh-signup-description">Upgrade to a paid account to get full access.</p>
+                                <p class="gh-signup-description">Upgrade to PRO to get full access.</p>
                                 <a class="gh-signup-btn gh-btn gh-primary-btn" href="#/portal/account/plans" data-portal="account/plans">Upgrade now</a>
                             {{/if}}
                         </div>
