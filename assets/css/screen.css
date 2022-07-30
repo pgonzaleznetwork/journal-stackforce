@@ -9,6 +9,13 @@
     --head-nav-gap: 3.2rem;
 }
 
+.gh-head{
+    background-color: var(--ghost-accent-color);
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
 .gh-btn {
     margin-top: 20px;
     padding-right: 1.6rem;
@@ -578,19 +585,11 @@
     }
 
     .gh-head-menu {
+        margin-left: 50px;
         height: 56px;
     }
 
-    .gh-head-menu::before,
-    .gh-head-menu::after {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        content: "";
-        background-color: var(--color-light-gray);
-    }
+   
 
     .gh-head-menu::after {
         top: 136px;
@@ -670,7 +669,13 @@
     .is-head-open #gh-head .gh-head-actions,
     .is-head-open #gh-head .gh-head-menu {
       display: block;
+      margin:auto;
+      text-align: center;
     }
+
+    .is-head-open #gh-head .gh-head-logo {
+        display: none;
+      }
     .is-head-open #gh-head .nav {
       display: flex;
       flex-direction: column;
@@ -682,4 +687,16 @@
 
 .gh-card-meta > .gh-card-link{
     display: inline;
+}
+
+
+
+.gh-head a{
+    color:var(--color-white)
+}
+
+.gh-head-btn:not(.gh-btn) {
+    
+    color:var(--color-white)
+    
 }
