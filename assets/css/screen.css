@@ -89,6 +89,7 @@
     background-color: var(--color-light-gray);
 }
 
+
 .gh-card + .gh-card {
     margin-top: 8rem;
 }
@@ -114,6 +115,7 @@
     font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: -0.01em;
+    color: var(--color-dark-gray);
 }
 
 .gh-card-meta {
@@ -696,7 +698,26 @@
 }
 
 .gh-head-btn:not(.gh-btn) {
-    
-    color:var(--color-white)
-    
+    color:var(--color-white);    
+}
+
+.after-footer{
+    border: 1px solid var(--color-light-gray);
+    margin-top: 60px;
+}
+
+
+.logo-text {
+    margin-left: 10px;
+    font-size: larger;
+}
+
+.gh-head-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+a.sign-up-link{
+    color: var(--color-white);
+    text-decoration: none;
 }

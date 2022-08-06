@@ -4,14 +4,17 @@
 
 <section class="gh-cta">
     {{#has visibility="paid"}}
-        <h4 class="gh-cta-title">Exclusive to PRO members</h4>
-        <p>You missed the best part!</p>
-        <p>This issue is exclusive to Stackforce PRO members. It's worth it.</p>
+        <h4 class="gh-cta-title">Exclusive to Stackforce members</h4>
+        <p>Please read <a style="font-weight: bold;" href="https://www.stackforce.one/fees/" target="_blank">"Why should you pay for this blog?"</a> for more info.</p>
         <div class="gh-cta-actions">
             {{#if @member}}
-                <button class="gh-btn gh-primary-btn" data-portal="account/plans">Get PRO</button>
+                <button class="gh-btn gh-primary-btn" >
+                    <a class="sign-up-link" href="https://www.stackforce.one/first-month">Join</a>
+                </button>
             {{else}}
-                <button class="gh-btn gh-primary-btn" data-portal="signup">Get PRO</button>
+                <button class="gh-btn gh-primary-btn">
+                    <a class="sign-up-link" href="https://www.stackforce.one/first-month">Join</a>
+                </button>
             {{/if}}
         </div>
 
