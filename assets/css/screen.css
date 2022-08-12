@@ -722,3 +722,8 @@ a.sign-up-link{
     text-decoration: none;
 }
 
+
+#disqus_thread {
+    max-width: 70%;
+    margin: 150px auto;
+}
