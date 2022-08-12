@@ -64,7 +64,7 @@
                 <div class="gh-head-actions">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     {{#unless @member}}
-                        <a class="gh-head-btn sign-up-link" href="https://www.stackforce.one/first-month">
+                        <a class="gh-head-btn sign-up-link" href="https://www.salesforceapi.dev/#/portal/signup">
                             {{> icons/email}}
                             Subscribe
                         </a>
@@ -82,11 +82,11 @@
                 <div class="gh-outer">
                     <section class="gh-subscribe-inner">
                         {{^if @member}}
-                            <h3 class="gh-subscribe-title">Subscribe to Stackforce</h3>
+                            <h3 class="gh-subscribe-title">{{@custom.subscribe_title}}</h3>
 
-                            <div class="gh-subscribe-description">Subscribe now to become a fullstack Salesforce developer</div>
+                            <div class="gh-subscribe-description">{{@custom.subscribe_text}}</div>
 
-                            <a class="gh-subscribe-input" href="https://www.stackforce.one/first-month">
+                            <a class="gh-subscribe-input" href="https://www.salesforceapi.dev/#/portal/signup">
                                 <div class="gh-subscribe-input-text">
                                     {{> icons/email}}
                                     fullstackdev@pro.com
@@ -94,9 +94,9 @@
                                 <div class="gh-subscribe-input-btn">Subscribe</div>
                             </a>
                         {{else}}
-                           <h3 class="gh-subscribe-title">Stackforce</h3>
+                           <h3 class="gh-subscribe-title">{{@custom.already_subscribed_title}}</h3>
 
-                           <div class="gh-subscribe-description">One step closer to becoming a fullstack Salesforce dev</div>
+                           <div class="gh-subscribe-description">{{@custom.already_subscribed_text}}</div>
 
                            <!--   <a class="gh-subscribe-btn gh-btn gh-primary-btn" href="#/portal/account/plans" data-portal="account/plans">Get PRO</a>-->
                         {{/if}}

@@ -49,6 +49,28 @@
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
+            },
+            "subscribe_title": {
+                "type": "text",
+                "default": "Subscribe to Salesforce APIs"
+            },
+
+            "subscribe_text": {
+                "type": "text",
+                "default": "Subscribe to not miss the next article!"
+
+
+            },
+            "already_subscribed_title": {
+                "type": "text",
+                "default": "Salesforce APIs"
+            },
+            
+            "already_subscribed_text": {
+                "type": "text",
+                "default": "One step closer to becoming a Salesforce API expert"
+
+
             }
         }
     },

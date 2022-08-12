@@ -48,9 +48,9 @@
                     {{^if @member.paid}}
                         <div class="gh-signup">
                             {{^if @member}}
-                                <p class="gh-signup-description">Subscribe now to become a fullstack Salesforce developer</p>
+                                <p class="gh-signup-description">{{@custom.subscribe_text}}</p>
 
-                                <a class="gh-subscribe-input" href="https://www.stackforce.one/first-month">
+                                <a class="gh-subscribe-input" href="https://www.salesforceapi.dev/#/portal/signup">
                                     <div class="gh-subscribe-input-text">
                                         {{> icons/email}}
                                         fullstackdev@pro.com
