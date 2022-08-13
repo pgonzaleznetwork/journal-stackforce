@@ -673,6 +673,7 @@
       display: block;
       margin:auto;
       text-align: center;
+      margin-top: 50%;
     }
 
     .is-head-open #gh-head .gh-head-logo {
@@ -726,4 +727,8 @@ a.sign-up-link{
 #disqus_thread {
     max-width: 70%;
     margin: 150px auto;
+}
+
+.gh-burger:after, .gh-burger:before {
+    background-color: var(--color-white) !important;
 }
