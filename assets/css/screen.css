@@ -731,4 +731,9 @@ a.sign-up-link{
 
 .gh-burger:after, .gh-burger:before {
     background-color: var(--color-white) !important;
+    color: var(--color-white) !important;
+}
+
+.gh-icon-btn{
+    color: var(--color-white) !important;
 }
