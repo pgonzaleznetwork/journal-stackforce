@@ -9,6 +9,11 @@
     --head-nav-gap: 3.2rem;
 }
 
+.about-mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
 .gh-head{
     background-color: var(--ghost-accent-color);
     top: 0;
@@ -34,7 +39,6 @@
 .gh-head-actions {
     font-size: 1.2rem;
     font-weight: 500;
-    text-transform: uppercase;
     letter-spacing: 0.01em;
 }
 
@@ -418,7 +422,6 @@
     font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.8;
-    text-transform: uppercase;
     letter-spacing: 0.01em;
 }
 
@@ -496,6 +499,11 @@
 }
 
 @media (max-width: 767px) {
+
+    .about-mobile{
+        display: block;
+    }
+
     .gh-latest {
         margin-bottom: 8rem;
     }
@@ -620,6 +628,8 @@
 }
 
 @media (max-width: 991px) {
+
+
     #gh-head .gh-head-inner {
       grid-template-columns: 1fr;
     }
@@ -683,6 +693,10 @@
       display: flex;
       flex-direction: column;
     }
+
+    .is-head-open #gh-head .nav li{
+        margin-bottom: 30px;
+      }
     .is-head-open.is-head-transparent #gh-head {
       background-color: var(--ghost-accent-color);
     }
@@ -736,4 +750,16 @@ a.sign-up-link{
 
 .gh-icon-btn{
     color: var(--color-white) !important;
+}
+
+.comments-wrapper-custom{
+    
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.gh-head .nav li {
+   font-size: 15px;
 }
