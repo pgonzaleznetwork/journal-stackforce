@@ -1,5 +1,5 @@
 {
-    "name": "journal-stackforce",
+    "name": "pablogonzalez-io",
     "description": "A Ghost theme",
     "version": "1.0.0",
     "engines": {
@@ -69,15 +69,25 @@
             "already_subscribed_text": {
                 "type": "text",
                 "default": "One step closer to becoming a Salesforce API expert"
-
-
+            },
+            "title_subscribe_to_see": {
+                "type": "text",
+                "group": "post"
+            },
+            "title_subscribe_to_see_p1": {
+                "type": "text",
+                "group": "post"
+            },
+            "title_subscribe_to_see_p2": {
+                "type": "text",
+                "group": "post"
             }
         }
     },
     "scripts": {
         "dev": "gulp",
         "test": "gscan .",
-        "zip": "gulp zip && cd dist && mv journal-stackforce.zip ~/Desktop"
+        "zip": "gulp zip && cd dist && mv pablogonzalez-io.zip ~/Desktop"
     },
     "devDependencies": {
         "autoprefixer": "10.4.7",
