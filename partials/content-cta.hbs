@@ -36,12 +36,21 @@
     {{/has}}
 
     <div class="gh-cta-actions">
+        
         {{#if @member}}
-            <button class="gh-btn gh-primary-btn" href="#/portal/account/plans" data-portal="account/plans">Upgrade now</button>
+            <p>Thank you for being a free subscriber! Join the community of 70+ Salesforce professionals who are embracing a software engineering mindset and benefiting
+            from this exclusive content. Don't be left behind—stand out from the crowd!
+            </p>
+            <button class="gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Unlock Paid Content</button>
+
         {{else}}
-            <!--<button class="gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe FREE</button>-->
-            <span class="gh-cta-link" href="#/portal/signin" data-portal="signin">Already have an account? Sign in.</span>
+            <p>Join the community of 70+ Salesforce professionals who are embracing a software engineering mindset and benefiting
+            from this exclusive content. Don't be left behind—stand out from the crowd!
+            </p>
+            <button class="gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Unlock Paid Content</button>
+
         {{/if}}
+        
     </div>
 </section>
 

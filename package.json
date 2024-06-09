@@ -52,7 +52,7 @@
             },
             "subscribe_title": {
                 "type": "text",
-                "default": "Subscribe to Salesforce APIs"
+                "default": "Subscribe to become a Salesforce DevOps and CI/CD expert"
             },
 
             "subscribe_text": {
@@ -63,24 +63,12 @@
             },
             "already_subscribed_title": {
                 "type": "text",
-                "default": "Salesforce APIs"
+                "default": "Salesforce DevOps and CI/CD"
             },
             
             "already_subscribed_text": {
                 "type": "text",
-                "default": "One step closer to becoming a Salesforce API expert"
-            },
-            "title_subscribe_to_see": {
-                "type": "text",
-                "group": "post"
-            },
-            "title_subscribe_to_see_p1": {
-                "type": "text",
-                "group": "post"
-            },
-            "title_subscribe_to_see_p2": {
-                "type": "text",
-                "group": "post"
+                "default": "One step closer to becoming a Salesforce DevOps and CI/CD expert"
             }
         }
     },
